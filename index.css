@@ -25,18 +25,18 @@ body {
 }
 
 h1 {
-  font-size: 25px;
+  font-size: clamp(2.5rem, 4vw, 4rem);
   text-align: center;
   color: var(--very-dark-magenta);
 }
 
 article p {
-    text-align: center;
-    color: var(--dark-grayish-magent);
+  text-align: center;
+  color: var(--dark-grayish-magent);
 }
 
 main {
-  max-width: 37.5rem;
+  max-width: 100rem;
   padding: 0 1rem;
 }
 
@@ -86,4 +86,39 @@ main {
 
 .ratings p {
   margin: 0.5rem 0 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .top__section {
+    display: flex;
+    align-items: baseline;
+    gap: 5rem;
+  }
+
+  .ratings > div {
+    display: flex;
+  }
+
+  article p,
+  h1 {
+    text-align: left;
+    padding-right: 5rem;
+  }
+
+  article,
+  .ratings {
+    flex: 1;
+  }
+
+  .star__container {
+    padding: 0 20px;
+  }
+
+  .ratings__second {
+    margin-left: 3rem;
+  }
+
+  .ratings__third {
+    margin-left: 6rem;
+  }
 }
