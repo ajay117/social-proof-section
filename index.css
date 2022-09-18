@@ -96,6 +96,11 @@ main {
   font-weight: 700;
 }
 
+.review__card,
+.ratings > div {
+    border-radius: 0.5rem;
+}
+
 .ratings p {
   margin: 0.5rem 0 0;
 }
