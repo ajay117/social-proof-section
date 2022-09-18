@@ -121,4 +121,18 @@ main {
   .ratings__third {
     margin-left: 6rem;
   }
+
+  .reviews {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .review__second {
+    margin-top: 6rem;
+  }
+
+  .review__third {
+    margin-top: 10rem;
+  }
 }
