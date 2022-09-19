@@ -11,7 +11,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
@@ -30,6 +30,9 @@ body {
   margin: 20px 0;
   font-size: 1.5rem;
   font-family: "League Spartan", sans-serif;
+  background-image: url("./images/bg-pattern-top-mobile.svg"),
+    url("/images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
 }
 
 h1 {
@@ -61,8 +64,8 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 2.5rem;
 }
 
@@ -98,7 +101,7 @@ main {
 
 .review__card,
 .ratings > div {
-    border-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .ratings p {
@@ -112,11 +115,14 @@ main {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-image: url("./images/bg-pattern-top-desktop.svg"),
+      url("images//bg-pattern-bottom-desktop.svg");
+    background-position: top left, bottom right;
   }
 
   .top__section {
@@ -124,8 +130,8 @@ main {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
     gap: 5rem;
   }
 
@@ -144,8 +150,8 @@ main {
   article,
   .ratings {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
   }
 
   .star__container {
@@ -165,8 +171,8 @@ main {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 2rem;
   }
 
